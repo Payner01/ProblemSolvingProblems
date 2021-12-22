@@ -86,3 +86,23 @@ def compressed_string(phrase):
 
 final = compressed_string(phrase)
 print(final)
+
+# Bonus Problem
+
+my_word = 'level'
+
+def my_word_backwards(my_word):
+    word = my_word[::-1]
+    return word
+
+word_backwards = my_word_backwards(my_word)
+
+
+def palindrome_string():
+    if word_backwards != my_word:
+        print(f'{my_word} is not a palindrome')
+    else:
+        print(f'{my_word} is a palindrome')
+
+final = palindrome_string()
+print(final)
