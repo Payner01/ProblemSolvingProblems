@@ -15,10 +15,8 @@ def first_letter_capitalize():
             print(first_letter.capitalize())
         
 
-
-#cap_phrase = phrase[:1].capitalize()
-#    return cap_phrase
-
 final = first_letter_capitalize()
 print(final)
+
+
 
