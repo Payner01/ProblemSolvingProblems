@@ -1,3 +1,5 @@
+'''
+# Worksheet 1
 
 # Reverse a String
 # i want the first letter of my_word to be the last letter (spelt backwards)
@@ -22,9 +24,6 @@ example = my_word_backwards('Hello')
 print(example)
 
 # Capitalize Letter
-
-
-
 
 #print(phrase.capitalize())
 #print(phrase.title())
@@ -106,3 +105,56 @@ def palindrome_string():
 
 final = palindrome_string()
 print(final)
+
+
+# Worksheet 2
+
+# Happy Numbers
+
+
+
+
+# Prime Numbers
+
+my_number = 3
+
+def determine_if_prime():
+    if my_number > 1:
+        for x in range(2,my_number):
+            if (my_number % x) == 0:
+                print(f'{my_number} is a prime number')
+                break
+        else:
+            print(f'{my_number} is a prime number')
+    else:
+        print(f'{my_number} is not a prime number')
+
+final = determine_if_prime()
+
+# Fibonacci Numbers
+'''
+user_input = int(input('Please enter the number of itterations you want: '))
+itterations = user_input
+
+#how many times they want to run
+#counter
+#store in a list 
+
+def fibonacci_sequence():
+    counter = 1
+    v1 = 1
+    v2 = 2
+    print(v1)
+    if itterations <= 1:
+        print('Enter number greater than 0')
+    elif itterations == 2:
+        print(v1)
+    else:
+        while counter < itterations:
+            print(v1)
+            n_itterations = v1 + v2
+            v1 = v2
+            v2 = n_itterations
+            counter += 1
+
+output = fibonacci_sequence()
